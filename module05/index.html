@@ -5,26 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Favorite Game - Star Wars Jedi: Fallen Order </title>
   <style>
-    <!--background: #0b0f1a, secondary background: #1a2233, containers: #2f3d5c, links: #00d1ff, links hover: #ff3b3b, text: #f1f5fb, dividers: #7a8499, game name: #3a86ff-->
     :root
     {
+      --bg: #0b0f1a;
+      --space-blue: #1a2233;
+      --surface: #2f3d5c; /*containers*/
+      --sec-border: #3a86ff; 
+      --bronze: #776248;
+      --bronze-dim: #4a3004;
+      --silver: #999999;
+      --light-blue: #3a86ff; 
+      --cyan: #7df9ff; /*off site links*/
+      --bright-red: #ff3b3b; /*hover off site links*/
+      --text: #d4d7dd;
+      --font-head: 'Luminari', monospace; 
+      --font-body: 'Courier-New', Courier, monospace; 
+    }
+
+    #game-title 
+    {
+      font-family: var(--font-head);
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 900;
+      color: var(--bronze);
+      text-transform: uppercase;
+      margin-bottom: .25rem;
+      text-align: center;
       
     }
-    
+
     .divider
     {
-
+      text-align: center;
+      color: var(--bronze-dim);
+      font-size: 1.5rem;
+      opacity: 0.5;
     }
+
     body
     {
-      
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      line-height: 1.75;
+      min-height: 100vh;
     }
-
-    header 
-    {
-      
-    }
-    header nav 
+    header nav
     {
       display: flex;
       justify-content: center;
@@ -32,41 +59,84 @@
       flex-wrap: wrap;
       margin-top: 1rem;
     }
+
     header > nav > a
     {
-
+      font-family: var(--font-head);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      color: var(--silver);
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      border: 1px solid var(--bronze-dim);
+      background: transparent;
     }
 
     header > nav > a:hover
     {
-      
+      color: var(--bronze);
+      border-bottom: var(--bronze-dim);
+      background: #1a2233;
     }
 
-    
 
     main
     {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
 
+    .content
+    {
+      background: var(--surface);
+      border: 2px double var(--bronze-dim);
+      border-top: 4px solid var(--bronze-dim);
+      padding: 2.2rem 2.5rem;
+      position: relative;
+    }
+    
+    .content h2
+    {
+      font-family: var(--font-head);
+      font-size: 1.5rem;
+      color: var(--bronze);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      padding-bottom: .4rem;
+      border-bottom: 1.5px dotted var(--bronze-dim);
+    }
+
+    .content p
+    {
+      color: var(--text);
+      margin-bottom: 1.3rem;
     }
 
     footer
     {
-
+      background: var(--surface);
+      border-top: 2px solid var(--bronze);
+      padding: 2rem;
+      text-align: center;
     }
 
     footer .footer-links
     {
-      
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    #game-facts
+    {
+
     }
 
-    .footer-links:hover
-    {
-      
-    }
-    .content-section
-    {
-      
-    }
   </style>
 </head>
   <body>
