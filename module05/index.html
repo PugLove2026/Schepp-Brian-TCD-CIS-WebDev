@@ -1,283 +1,315 @@
 <doctype.html>
-<html lang=en>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Favorite Game - Star Wars Jedi: Fallen Order </title>
-  <style>
-    :root
-    {
-      --bg: #0b0f1a;
-      --space-blue: #1a2233;
-      --sec-border: #3a86ff; 
-      --bronze: #776248;
-      --bronze-dim: #4a3004;
-      --silver: #999999;
-      --light-blue: #3a86ff; 
-      --cyan: #7df9ff; /*off site links*/
-      --cyan-dim: #008b8b;
-      --bright-red: #ff3b3b; /*hover off site links*/
-      --text: #d4d7dd;
-      --font-head: 'Luminari', monospace; 
-      --font-body: 'Courier-New', Courier, monospace; 
-    }
-
-    #game-title 
-    {
-      font-family: var(--font-head);
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      font-weight: 900;
-      color: var(--bronze);
-      text-transform: uppercase;
-      margin-bottom: .25rem;
-    }
-
-    .divider
-    {
-      text-align: center;
-      color: var(--bronze);
-      font-size: 3rem;
-      opacity: 0.5;
-    }
-
-    body
-    {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: var(--font-body);
-      font-size: 1.15rem;
-      line-height: 1.75;
-      min-height: 100vh;
-    }
-    header nav
-    {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-
-    header > nav > a
-    {
-      font-family: var(--font-head);
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      color: var(--silver);
-      text-decoration: none;
-      padding: 0.4rem 1rem;
-      border: 1px solid var(--bronze);
-      background: transparent;
-    }
-
-    header > nav > a:hover
-    {
-      color: var(--bronze);
-      background: #1a2233;
-    }
-
-
-    main
-    {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-    }
-
-    .content
-    {
-      background: var(--space-blue);
-      border: 2px solid var(--bronze);
-      border-top: 8px solid var(--bronze);
-      padding: 2.2rem 2.5rem;
-      position: relative;
-    }
-    
-    .content h2
-    {
-      font-family: var(--font-head);
-      font-size: 1.5rem;
-      color: var(--bronze);
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-      padding-bottom: .4rem;
-      border-bottom: 1.5px dotted var(--bronze);
-    }
-
-    .content p
-    {
-      color: var(--text);
-      margin-bottom: 1.3rem;
-    }
-
-    footer
-    {
-      background: var(--space-blue);
-      border-top: 2px solid var(--bronze);
-      padding: 2rem;
-      text-align: center;
-    }
-
-    footer p.copyright 
-    {
-      font-size: 0.85rem;
-      color: var(--silver);
+  <html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Game - Star Wars Jedi: Fallen Order </title>
+    <style>
+      :root
+      {
+        --bg: #0b0f1a;
+        --space-blue: #1a2233;
+        --sec-border: #3a86ff; 
+        --bronze: #776248;
+        --bronze-dim: #4a3004;
+        --silver: #999999;
+        --light-blue: #3a86ff; 
+        --cyan: #7df9ff; /*off site links*/
+        --cyan-dim: #008b8b;
+        --bright-red: #ff3b3b; /*hover off site links*/
+        --text: #d4d7dd;
+        --font-head: 'Luminari', monospace; 
+        --font-body: 'Courier-New', Courier, monospace; 
+      }
+  
+      #game-title 
+      {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font-head);
+        font-size: clamp(1.8rem, 5.6vw, 3.6rem);
+        font-weight: 900;
+        color: var(--silver);
+        margin-bottom: .25rem;
+      }
+  
+      .divider
+      {
+        text-align: center;
+        color: #b5651d;
+        font-size: 3rem;
+        opacity: 0.75;
+      }
+  
+      body
+      {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: var(--font-body);
+        font-size: 1.15rem;
+        line-height: 1.75;
+        min-height: 100vh;
+      }
+      header nav
+      {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+  
+      header > nav > a
+      {
+        font-family: var(--font-head);
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        color: var(--silver);
+        text-decoration: none;
+        padding: 0.4rem 1rem;
+        border: 1px solid var(--bronze);
+        background: transparent;
+      }
+  
+      header > nav > a:hover
+      {
+        color: var(--bronze);
+        background: #1a2233;
+      }
+  
+  
+      main
+      {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+  
+      .content
+      {
+        background: var(--space-blue);
+        border: 2px solid var(--bronze);
+        border-top: 4px solid var(--light-blue);
+        padding: 2.2rem 2.5rem;
+        position: relative;
+      }
       
-    }
+      .content h2
+      {
+        font-family: var(--font-head);
+        font-size: 1.5rem;
+        color: var(--light-blue);
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        padding-bottom: .4rem;
+        border-bottom: 3px dotted var(--light-blue);
+      }
+  
+      .content p
+      {
+        color: var(--text);
+        margin-bottom: 1.3rem;
+      }
+  
+      footer
+      {
+        background: var(--space-blue);
+        border-top: 2px solid var(--bronze);
+        padding: 2rem;
+        text-align: center;
+      }
+  
+      footer p.copyright 
+      {
+        font-size: 0.85rem;
+        color: var(--silver);
+        
+      }
+  
+      footer .footer-links
+      {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
 
-    footer .footer-links
-    {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-    }
+      footer a
+      {
+        color: #d4d7dd;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-color: #999999;
+      }
+      footer a:hover
+      {
+        color:#b5651d;
+        text-decoration-color:#654321;
+      }
 
-    #game-facts
-    {
-      background: var(--space-blue);
-      border: 1px double var(--bronze);
-      border-top: 3px solid var(--sec-border);
-      padding: 2rem 2.2rem;
-    }
-    #game-facts h2
-    {
-      font-family: var(--font-head);
-      font-size: 1.5rem;
-      color: var(--light-blue);
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-      padding-bottom: .4rem;
-      border-bottom: 1.5px dotted var(--light-blue); 
-    }
+      #game-facts
+      {
+        background: var(--space-blue);
+        border: 1px double var(--bronze);
+        border-top: 3px solid var(--sec-border);
+        padding: 2rem 2.2rem;
+      }
+      #game-facts h2
+      {
+        font-family: var(--font-head);
+        font-size: 1.5rem;
+        color: var(--light-blue);
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        padding-bottom: .4rem;
+        border-bottom: 3px dotted var(--light-blue); 
+      }
+  
+      #game-facts ul 
+      {
+        list-style: none;
+        padding: 0;
+      }
+  
+      #game-facts ul li
+      {
+        padding: 1rem 1.25rem;
+        border-left: 4px solid var(--bronze-dim);
+        font-size: 1.1rem;
+      }
+  
+      #game-facts ul li:nth-of-type(odd)
+      {
+        background: #654321;
+        border-left-color: #b5651d;
+        color: var(--text);
+        
+      }
+  
+      #game-facts ul li:nth-of-type(even)
+      {
+        background: #2f3d5c;
+        border-left-color: var(--light-blue);
+        color: var(--cyan);
+      }
+  
+      #game-facts ul li + li 
+      {
+        margin-top: .5rem
+      }
+     
+      a
+      {
+        color: var(--bronze);
+        text-decoration: underline;
+        text-decoration-color: var(--bronze-dim);
+      }
+  
+      a:hover
+      {
+        color: var(--silver);
+        text-decoration-color: var(--silver);
+      }
+  
+       a:not([href*="puglove2026"])
+       {
+        color: var(--cyan);
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: var(--cyan-dim);
+       }
+  
+       a:not([href*="puglove2026"]):hover
+       {
+        color: var(--bright-red);
+        text-decoration-color: var(--bright-red);
+       }
 
-    #game-facts ul 
-    {
-      list-style: none;
-      padding: 0;
-    }
-
-    #game-facts ul li
-    {
-      padding: 1rem 1.25rem;
-      border-left: 4px solid var(--bronze-dim);
-      font-size: 1.1rem;
-    }
-
-    #game-facts ul li:nth-of-type(odd)
-    {
-      background: #4a3004;
-      border-left-color: var(--bronze);
-      color: var(--silver);
-    }
-
-    #game-facts ul li:nth-of-type(even)
-    {
-      background: #2f3d5c;
-      border-left-color: var(--light-blue);
-      color: var(--silver);
-    }
-
-    #game-facts ul li + li 
-    {
-      margin-top: .5rem
-    }
-   
-    a
-    {
-      color: var(--bronze);
-      text-decoration: underline;
-      text-decoration-color: var(--bronze-dim);
-    }
-
-    a:hover
-    {
-      color: var(--silver);
-      text-decoration-color: var(--silver);
-    }
-
-     a:not([href*="puglove2026"])
-     {
-      color: var(--cyan);
-      text-decoration: underline;
-      text-decoration-style: dashed;
-      text-decoration-color: var(--cyan-dim);
-     }
-
-     a:not([href*="puglove2026"]):hover
-     {
-      color: var(--bright-red);
-      text-decoration-color: var(--bright-red);
-     }
-
-  </style>
-</head>
-  <body>
-    
-    <header>
-      <h1 id="#game-title">Star Wars Jedi: Fallen Order</h1>
-      <nav>
-        <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/">Home</a>
-        <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/module02/index.html">Module 02</a>
-        <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/module03/index.html">Module 03</a>
-        <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/module04/index.html">Module 04</a>
-      </nav>
-    </header>
-    
-    <main>
-      <section class="content">
-        <h2>About the Game</h2>
-        <p>
-            Star Wars Jedi: Fallen Order is an action role-playing game developed by Respawn Entertainment and publsihed by Electronic Arts (EA) in 2019.
-          Set 5 years after The Purge A.K.A Order 66, you follow the story of a young Jedi, Cal Kestis. The game is set in the early ages of the Empire, before Luke Skywalker even started training.
-          The stroy is pretty direct, however if you explore enough you will find Force Echoes, which gives information of the past, not just the current story, rewarding those who choose to explore outside the beaten path.
-        </p>
-        <p>
-            The world in this game is connected in many ways. Often times you visit a planet multiple times, most you visit twice. Bogano and Ilum are the only outliers.
-          You go back to Bogano 3 times, and you only visit Ilum once. Fallen Order is an excellent game for Star Wars fans. However, you dont have to be a Star Wars fan or know the lore to play the game and enjoy it.
-          Everything in the game is it's own story, you don't need prior Star Wars knowledge to figure out what's going on. For more information about Fallen Order you can visit <a href="https://starwars.fandom.com/wiki/Star_Wars_Jedi:_Fallen_Order">Wookiepedia</a>
-          or <a href="https://www.imdb.com/title/tt56914" >IMDb</a>.
-        </p>
-      </section>
-
-      <div class = "divider">|-  -|-  -|-  -|</div>
-
-      <section class="content">
-        <h2>Why I Love Fallen Order</h2>
-        <p>
-            The primary reason I love this game is because of the fact that it is Star Wars. Star Wars is one of my favorite franchises ever, not much can top it.
-          I also enjoy the fact that it is a higher difficulty, even playing on the easiest difficulty I was almost defeated multiple times. 
-          One of the most reqrding things is figuring out the puzzles and defeating enemeies. The reason defeating or enocuntering enemies is that you can scan the creatures with BD-1, your robot companion, after the enemies die.
-          Why is scanning them important? Well when you open the menu it gives you a tactical guide that tells you the enemies' greatest weaknesses and strengths, but only when you scan them.
-        </p>
-        <p>
-            A major part of the design is how progression unlocks previously inaccessible locations. There are some parts you cannot get to right away, and have to return to that location later. 
-          For example, on the first visit to Kashyyyk, there is a certain secret that you cannot get to because you need a double jump and that ability is not granted until near the middle of the second Kashyyyk visit.
-          Cal cut himself off from the force, but when you prgress in the story he has flashbacks to his training, each of which grant a new ability. 
-          Seeing these flashbacks is because of a unique power Cal has that not many other Jedi do called "Force Echos" which just means he can sense the past of objects he holds.
-          The level design was inspired by Metroidvania because of all the locations you have to go back to after receiving abilities. This is jsut a small part of it, you can read more about the game at
-          <a href="https://en.wikipedia.org/wiki/Star_Wars_Jedi:_Fallen_Order">Wikipedia</a>.
-        </p>
-        <p>
-            The game trusts in your ability to figure things out. It has quite a few puzzles you need to solve to progress, but it barely gives any information on them. You can request a hint from BD-1, but the hints don't say much so you still have to figure out most of it.
-          Sometimes I found the hints irritating because it only gave hints at things I already knew, and I still got stuck on some of the puzzles for a while.
-          Especially the puzzle at the second Zeffo Sage's tomb, I couldn't figure it out without a guide. That puzzle is the hardest one to figure out, the first Zeffo Sage tomb is the second hardest.
-        </p>
-      </section>
-
-      <div class = "divider">|-  -|-  -|-  -|</div>
-
+  
+    </style>
+  </head>
+    <body>
       
-
-    </main>
-
-    <footer>
+      <header>
+        <h1 id="game-title">Star Wars Jedi: Fallen Order</h1>
+        <nav>
+          <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/">Home</a>
+          <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/module02/index.html">Module 02</a>
+          <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/module03/index.html">Module 03</a>
+          <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/module04/index.html">Module 04</a>
+        </nav>
+      </header>
       
-    </footer>
-      
-  </body>
-</html>
+      <main>
+        <section class="content">
+          <h2>About the Game</h2>
+          <p>
+              Star Wars Jedi: Fallen Order is an action role-playing game developed by Respawn Entertainment and publsihed by Electronic Arts (EA) in 2019.
+            Set 5 years after The Purge (A.K.A Order 66), you follow the story of a young Jedi, Cal Kestis. The game is set in the early ages of the Empire, before Luke Skywalker even started training.
+            The stroy is pretty direct, however if you explore enough you will find Force Echoes, which gives information of the past, not just the current story, rewarding those who choose to explore outside the beaten path.
+          </p>
+          <p>
+              The world in this game is connected in many ways. Often times you visit a planet multiple times, most you visit twice. Bogano and Ilum are the only outliers.
+            You go back to Bogano 3 times, and you only visit Ilum once. Fallen Order is an excellent game for Star Wars fans. However, you dont have to be a Star Wars fan or know the lore to play the game and enjoy it.
+            Everything in the game is it's own story, you don't need prior Star Wars knowledge to figure out what's going on. For more information about Fallen Order you can visit <a href="https://starwars.fandom.com/wiki/Star_Wars_Jedi:_Fallen_Order">Wookiepedia</a>
+            or <a href="https://www.imdb.com/title/tt56914" >IMDb</a>.
+          </p>
+        </section>
+  
+        <div class = "divider">|-  -|-  -|-  -|</div>
+  
+        <section class="content">
+          <h2>Why I Love Fallen Order</h2>
+          <p>
+              The primary reason I love this game is because of the fact that it is Star Wars. Star Wars is one of my favorite franchises ever, not much can top it.
+            I also enjoy the fact that it is a higher difficulty, even playing on the easiest difficulty I was almost defeated multiple times. 
+            One of the most reqrding things is figuring out the puzzles and defeating enemeies. The reason defeating or enocuntering enemies is that you can scan the creatures with BD-1, your robot companion, after the enemies die.
+            Why is scanning them important? Well when you open the menu it gives you a tactical guide that tells you the enemies' greatest weaknesses and strengths, but only when you scan them.
+          </p>
+          <p>
+              A major part of the design is how progression unlocks previously inaccessible locations. There are some parts you cannot get to right away, and have to return to that location later. 
+            For example, on the first visit to Kashyyyk, there is a certain secret that you cannot get to because you need a double jump and that ability is not granted until near the middle of the second Kashyyyk visit.
+            Cal cut himself off from the force, but when you prgress in the story he has flashbacks to his training, each of which grant a new ability. 
+            Seeing these flashbacks is because of a unique power Cal has that not many other Jedi do called "Force Echos" which just means he can sense the past of objects he holds.
+            The level design was inspired by Metroidvania because of all the locations you have to go back to after receiving abilities. This is jsut a small part of it, you can read more about the game at
+            <a href="https://en.wikipedia.org/wiki/Star_Wars_Jedi:_Fallen_Order">Wikipedia</a>.
+          </p>
+          <p>
+              The game trusts in your ability to figure things out. It has quite a few puzzles you need to solve to progress, but it barely gives any information on them. You can request a hint from BD-1, but the hints don't say much so you still have to figure out most of it.
+            Sometimes I found the hints irritating because it only gave hints at things I already knew, and I still got stuck on some of the puzzles for a while.
+            Especially the puzzle at the second Zeffo Sage's tomb, I couldn't figure it out without a guide. That puzzle is the hardest one to figure out, the first Zeffo Sage tomb is the second hardest.
+          </p>
+        </section>
+  
+        <div class = "divider">|-  -|-  -|-  -|</div>
+        
+        <section id="game-facts">
+          <h2>5 Things You Should Know About Star Wars Jedi: Fallen Order</h2> 
+          <ul>
+            <li>Fallen Order was directed by Stig Asmussen, who joined Respawn Entertainment 5 years before Fallen Order was published.</li>
+            <li>Parrying is a major mechanic, you are likely to be defeated with ease if you never use the parry mechanic, especially at higher difficulties.</li>
+            <li>Scanning with BD-1 is also a major mechanic. As stated earlier, scanning enemies with BD-1 tells you the enemy's greatest strength and weakness.</li>
+            <li>Although most of the story is told directly, it is only the current story. You can get bits and pieces of past events by finding the "Force Echoes". The past events are what you have to piece together if you choose to try.</li>
+            <li>Even the easiest difficulty levels are somewhat challenging and it ramps up pretty quickly. Sometimes being defeated can be very punishing, especially if the last save point was a while ago.</li>
+          </ul>
+        </section>
+        
+  
+      </main>
+  
+      <footer>
+        <div class="footer-links">
+          <a href="https://puglove2026.github.io/Schepp-Brian-TCD-CIS-WebDev/">Home</a>
+          <a href="https://starwars.fandom.com/wiki/Star_Wars_Jedi:_Fallen_Order">Wookiepedia</a>
+          <a href="">Respawn Entertainment Official</a>
+          <a href="https://en.wikipedia.org/wiki/Star_Wars_Jedi:_Fallen_Order">Wikipedia</a>
+        </div>
+        <p class="copyright">&copy; 2025 - TCD CIS / Game Design &nbsp;|&nbsp; Brian Schepp &nbsp;|&nbsp; Module 05 Assignment</p>
+      </footer>
+        
+    </body>
+  </html>
